@@ -41,7 +41,13 @@ namespace dynamicMenu
 
         private void LoadConfig()
         {
-          
+            XmlDocument doc = new XmlDocument();
+            doc.Load(configFile);
+
+            dbAddress = doc.SelectSingleNode("/config/address").InnerText;
+            dbUser = doc.SelectSingleNode("/config/user").InnerText;
+            dbPass = doc.SelectSingleNode("/config/password").InnerText;
+            dbPort = doc.SelectSingleNode("/config/port").InnerText;
         }
 
         private void CreateConfig()
