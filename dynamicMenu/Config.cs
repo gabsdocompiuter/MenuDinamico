@@ -39,6 +39,9 @@ namespace dynamicMenu
 
         }
 
+        /// <summary>
+        /// Lê as configurações salvas no arquivo de configurações
+        /// </summary>
         private void LoadConfig()
         {
             XmlDocument doc = new XmlDocument();
@@ -50,6 +53,9 @@ namespace dynamicMenu
             dbPort = doc.SelectSingleNode("/config/port").InnerText;
         }
 
+        /// <summary>
+        /// Cria e salva configurações
+        /// </summary>
         private void CreateConfig()
         {
             ShowDialog();
@@ -83,7 +89,7 @@ namespace dynamicMenu
 
         }
 
-        #region Métodos dos Botões
+        #region Métodos da Tela
 
         private void bClose_Click(object sender, EventArgs e)
         {
@@ -100,12 +106,12 @@ namespace dynamicMenu
             this.Close();
         }
 
-        #endregion
-
         private void TextBox_Enter(object sender, EventArgs e)
         {
             TextBox tb = (TextBox)sender;
             tb.SelectAll();
         }
+
+        #endregion
     }
 }
