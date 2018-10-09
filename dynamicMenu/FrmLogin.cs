@@ -16,7 +16,7 @@ namespace dynamicMenu
         {
             InitializeComponent();
 
-            Config config = new Config();
+            FrmConfig config = new FrmConfig();
         }
 
         private void pbClose_Click(object sender, EventArgs e)

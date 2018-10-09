@@ -12,7 +12,7 @@ using System.Xml.Linq;
 
 namespace dynamicMenu
 {
-    public partial class Config : Form
+    public partial class FrmConfig : Form
     {
         private String configFile = "config.xml";
 
@@ -24,19 +24,14 @@ namespace dynamicMenu
         /// <summary>
         /// Construtor
         /// </summary>
-        public Config()
+        public FrmConfig()
         {
             InitializeComponent();
 
             if (System.IO.File.Exists(configFile))
-            {
                 LoadConfig();
-            }
             else
-            {
                 CreateConfig();
-            }
-
         }
 
         /// <summary>

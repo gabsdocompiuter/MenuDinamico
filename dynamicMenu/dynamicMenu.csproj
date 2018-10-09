@@ -45,11 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config.cs">
+    <Compile Include="FrmConfig.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Config.Designer.cs">
-      <DependentUpon>Config.cs</DependentUpon>
+    <Compile Include="FrmConfig.Designer.cs">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -65,8 +65,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Config.resx">
-      <DependentUpon>Config.cs</DependentUpon>
+    <EmbeddedResource Include="FrmConfig.resx">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

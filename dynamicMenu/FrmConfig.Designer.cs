@@ -1,6 +1,6 @@
 ﻿namespace dynamicMenu
 {
-    partial class Config
+    partial class FrmConfig
     {
         /// <summary>
         /// Required designer variable.
@@ -51,7 +51,7 @@
             this.bSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.bSave.ForeColor = System.Drawing.Color.White;
-            this.bSave.Location = new System.Drawing.Point(49, 181);
+            this.bSave.Location = new System.Drawing.Point(49, 187);
             this.bSave.Name = "bSave";
             this.bSave.Size = new System.Drawing.Size(294, 40);
             this.bSave.TabIndex = 5;
@@ -67,7 +67,7 @@
             this.tbAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tbAddress.ForeColor = System.Drawing.Color.White;
-            this.tbAddress.Location = new System.Drawing.Point(97, 48);
+            this.tbAddress.Location = new System.Drawing.Point(97, 54);
             this.tbAddress.Name = "tbAddress";
             this.tbAddress.Size = new System.Drawing.Size(270, 23);
             this.tbAddress.TabIndex = 1;
@@ -79,17 +79,17 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Location = new System.Drawing.Point(0, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(372, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Configurações do Banco de Dados";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // line1
             // 
             this.line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.line1.Location = new System.Drawing.Point(0, 20);
+            this.line1.Location = new System.Drawing.Point(0, 26);
             this.line1.Name = "line1";
             this.line1.Size = new System.Drawing.Size(392, 1);
             this.line1.TabIndex = 5;
@@ -98,7 +98,7 @@
             // 
             this.bClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.bClose.Image = global::dynamicMenu.Properties.Resources.power_24x24;
-            this.bClose.Location = new System.Drawing.Point(372, 0);
+            this.bClose.Location = new System.Drawing.Point(372, 3);
             this.bClose.Name = "bClose";
             this.bClose.Size = new System.Drawing.Size(20, 20);
             this.bClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -111,7 +111,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(24, 50);
+            this.label2.Location = new System.Drawing.Point(24, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 16);
             this.label2.TabIndex = 4;
@@ -126,7 +126,7 @@
             this.tbUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tbUser.ForeColor = System.Drawing.Color.White;
-            this.tbUser.Location = new System.Drawing.Point(97, 77);
+            this.tbUser.Location = new System.Drawing.Point(97, 83);
             this.tbUser.Name = "tbUser";
             this.tbUser.Size = new System.Drawing.Size(270, 23);
             this.tbUser.TabIndex = 2;
@@ -137,7 +137,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(36, 79);
+            this.label3.Location = new System.Drawing.Point(36, 85);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 16);
             this.label3.TabIndex = 4;
@@ -152,7 +152,7 @@
             this.tbPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tbPass.ForeColor = System.Drawing.Color.White;
-            this.tbPass.Location = new System.Drawing.Point(97, 106);
+            this.tbPass.Location = new System.Drawing.Point(97, 112);
             this.tbPass.Name = "tbPass";
             this.tbPass.Size = new System.Drawing.Size(270, 23);
             this.tbPass.TabIndex = 3;
@@ -163,7 +163,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(44, 108);
+            this.label4.Location = new System.Drawing.Point(44, 114);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 16);
             this.label4.TabIndex = 4;
@@ -178,7 +178,7 @@
             this.tbPort.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tbPort.ForeColor = System.Drawing.Color.White;
-            this.tbPort.Location = new System.Drawing.Point(97, 135);
+            this.tbPort.Location = new System.Drawing.Point(97, 141);
             this.tbPort.Name = "tbPort";
             this.tbPort.Size = new System.Drawing.Size(270, 23);
             this.tbPort.TabIndex = 4;
@@ -190,19 +190,19 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(51, 137);
+            this.label5.Location = new System.Drawing.Point(51, 143);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "Porta";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Config
+            // FrmConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.ClientSize = new System.Drawing.Size(392, 240);
+            this.ClientSize = new System.Drawing.Size(392, 239);
             this.Controls.Add(this.bClose);
             this.Controls.Add(this.line1);
             this.Controls.Add(this.label5);
@@ -216,7 +216,7 @@
             this.Controls.Add(this.tbAddress);
             this.Controls.Add(this.bSave);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Config";
+            this.Name = "FrmConfig";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Config";
