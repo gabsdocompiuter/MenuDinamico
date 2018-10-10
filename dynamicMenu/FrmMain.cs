@@ -13,12 +13,53 @@ namespace dynamicMenu
     public partial class FrmMain : Form
     {
 
+        #region Padrões dos Botões
+
+        #region Tamanhos
+
+        /// <summary>
+        /// Altura do botão
+        /// </summary>
         private int hBtn = 40;
-        private int wBtn = 209;
+
+        /// <summary>
+        /// Largura do botão
+        /// </summary>
+        private int wBtn;
+
+        /// <summary>
+        /// Largura do Icn (Parte colorida na esquerda)
+        /// </summary>
+        private int wIcn = 7;
+
+        #endregion
+
+        #region Cores
+
+        /// <summary>
+        /// Cor do botão - stantard
+        /// </summary>
+        private Color crBtnSt = Color.FromArgb(217, 217, 217);
+
+        /// <summary>
+        /// Cor do botão - selecionado
+        /// </summary>
+        private Color crBtnSl = Color.FromArgb(59, 60, 63);
+
+        /// <summary>
+        /// Cor dos Icn (Parte colorida na esquerda)
+        /// </summary>
+        private Color crIcn = Color.FromArgb(30, 30, 30);
+
+        #endregion
+
+        #endregion
 
         public FrmMain()
         {
             InitializeComponent();
+
+            wBtn = pMenuLateral.Size.Width;
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -36,6 +77,7 @@ namespace dynamicMenu
 
             String nome = "teste";
 
+            //Calculo para centralizar os botões verticalmente
             int pos1 = ((yTela - qtd * hBtn) / 2) - (hBtn/2);
 
             for (int i = 0; i < qtd; i++)
@@ -53,18 +95,18 @@ namespace dynamicMenu
         /// <summary>
         /// Adiciona ícone lateral
         /// </summary>
-        /// <param name="y"></param>
+        /// <param name="posY"></param>
         /// <param name="name"></param>
-        private void AddIcn(int y, String name)
+        private void AddIcn(int posY, String name)
         {
             Panel p = new Panel
             {
                 Anchor = (AnchorStyles.Left | AnchorStyles.Top),
-                BackColor = Color.Green,
+                BackColor = crIcn,
                 Name = name,
                 TabStop = false,
-                Size = new Size(10, hBtn),
-                Location = new Point(0, y),
+                Size = new Size(wIcn, hBtn),
+                Location = new Point(0, posY),
                 Visible = false
             };
             pMenuLateral.Controls.Add(p);
@@ -73,20 +115,22 @@ namespace dynamicMenu
         /// <summary>
         /// Adiciona Botão no menu
         /// </summary>
-        /// <param name="y"></param>
+        /// <param name="posY"></param>
         /// <param name="name"></param>
         /// <param name="desc"></param>
-        private void AddButton(int y, String name, String desc)
+        private void AddButton(int posY, String name, String desc)
         {
             Button b = new Button
             {
                 Anchor = (AnchorStyles.Left | AnchorStyles.Top),
                 FlatStyle = FlatStyle.Flat,
-                Location = new Point(10, y),
+                Location = new Point(0, posY),
                 Font = new Font("Microsoft Sans Serif", 10F),
-                ForeColor = Color.FromArgb(217, 217, 217),
+                ForeColor = crBtnSt,
                 Name = name,
                 Size = new Size(wBtn, hBtn),
+                TextAlign = ContentAlignment.MiddleLeft,
+                Padding = new Padding(wIcn, 0, 0, 0),
                 TabStop = true,
                 Text = desc
             };
@@ -104,18 +148,25 @@ namespace dynamicMenu
         private void MenuClick(object sender, EventArgs e)
         {
             //Deixa todos com a cor padrão
-            foreach (Control p in pMenuLateral.Controls)
+            foreach (Control c in pMenuLateral.Controls)
             {
-                if (p is Panel)
+                if (c is Panel)
                 {
-                    p.Visible = false;
+                    c.Visible = false;
+                }
+
+                if (c is Button)
+                {
+                    c.BackColor = pMenuLateral.BackColor;
                 }
             }
 
             Button b = (Button)sender;
             String pName = "icn" + b.Name;
 
-            //Muda a cor do ícone
+            //Muda para as novas cores
+            b.BackColor = crBtnSl;
+
             Panel icn = pMenuLateral.Controls.Find(pName, false).FirstOrDefault() as Panel;
             icn.Visible = true;
         }
