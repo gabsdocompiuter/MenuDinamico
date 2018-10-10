@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.bLogin = new System.Windows.Forms.Button();
             this.tbUser = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tbPass = new System.Windows.Forms.TextBox();
@@ -36,29 +36,30 @@
             this.bViewPass = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pbClose = new System.Windows.Forms.PictureBox();
+            this.bClose = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bViewPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // bLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(53)))), ((int)(((byte)(56)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(35, 181);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(294, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
+            this.bLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(53)))), ((int)(((byte)(56)))));
+            this.bLogin.FlatAppearance.BorderSize = 0;
+            this.bLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.bLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.bLogin.ForeColor = System.Drawing.Color.White;
+            this.bLogin.Location = new System.Drawing.Point(35, 181);
+            this.bLogin.Name = "bLogin";
+            this.bLogin.Size = new System.Drawing.Size(294, 40);
+            this.bLogin.TabIndex = 0;
+            this.bLogin.Text = "Login";
+            this.bLogin.UseVisualStyleBackColor = false;
+            this.bLogin.Click += new System.EventHandler(this.bLogin_Click);
             // 
             // tbUser
             // 
@@ -139,17 +140,17 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // pbClose
+            // bClose
             // 
-            this.pbClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.pbClose.Image = global::dynamicMenu.Properties.Resources.power_24x24;
-            this.pbClose.Location = new System.Drawing.Point(336, 4);
-            this.pbClose.Name = "pbClose";
-            this.pbClose.Size = new System.Drawing.Size(25, 25);
-            this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbClose.TabIndex = 3;
-            this.pbClose.TabStop = false;
-            this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
+            this.bClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.bClose.Image = global::dynamicMenu.Properties.Resources.power_24x24;
+            this.bClose.Location = new System.Drawing.Point(336, 4);
+            this.bClose.Name = "bClose";
+            this.bClose.Size = new System.Drawing.Size(25, 25);
+            this.bClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bClose.TabIndex = 3;
+            this.bClose.TabStop = false;
+            this.bClose.Click += new System.EventHandler(this.bClose_Click);
             // 
             // pictureBox1
             // 
@@ -172,11 +173,11 @@
             this.Controls.Add(this.bViewPass);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pbClose);
+            this.Controls.Add(this.bClose);
             this.Controls.Add(this.tbPass);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tbUser);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmLogin";
             this.Opacity = 0.9D;
@@ -185,7 +186,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bViewPass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -194,10 +195,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bLogin;
         private System.Windows.Forms.TextBox tbUser;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pbClose;
+        private System.Windows.Forms.PictureBox bClose;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox tbPass;

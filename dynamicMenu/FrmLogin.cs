@@ -19,11 +19,6 @@ namespace dynamicMenu
             FrmConfig config = new FrmConfig();
         }
 
-        private void pbClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         /// <summary>
         /// Mostra e oculta a senha
         /// </summary>
@@ -75,6 +70,40 @@ namespace dynamicMenu
             {
                 tbPass.Text = "password";
             }
+        }
+
+        #endregion
+
+        #region Eventos da Tela
+
+        /// <summary>
+        /// Botão Close
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        /// <summary>
+        /// Botão Logar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bLogin_Click(object sender, EventArgs e)
+        {
+            /*
+             * ... Realiza verificações do login ...
+             * 
+             */
+
+            //Após realizar o login, abre o Menu Principal
+            FrmMain main = new FrmMain();
+            main.ShowDialog();
+
+            //Após fechar o principal, finalizar o programa
+            this.Close();
         }
 
         #endregion
