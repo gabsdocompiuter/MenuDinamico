@@ -31,13 +31,22 @@
             this.pMenuLateral = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pbClose = new System.Windows.Forms.PictureBox();
+            this.pLogo = new System.Windows.Forms.Panel();
+            this.pRodape = new System.Windows.Forms.Panel();
+            this.pOpcoes = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pMenuLateral.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
+            this.pRodape.SuspendLayout();
             this.SuspendLayout();
             // 
             // pMenuLateral
             // 
             this.pMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.pMenuLateral.Controls.Add(this.pOpcoes);
+            this.pMenuLateral.Controls.Add(this.pRodape);
+            this.pMenuLateral.Controls.Add(this.pLogo);
             this.pMenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.pMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.pMenuLateral.Name = "pMenuLateral";
@@ -66,6 +75,43 @@
             this.pbClose.TabStop = false;
             this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
             // 
+            // pLogo
+            // 
+            this.pLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pLogo.Location = new System.Drawing.Point(0, 0);
+            this.pLogo.Name = "pLogo";
+            this.pLogo.Size = new System.Drawing.Size(227, 94);
+            this.pLogo.TabIndex = 0;
+            // 
+            // pRodape
+            // 
+            this.pRodape.Controls.Add(this.label1);
+            this.pRodape.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pRodape.Location = new System.Drawing.Point(0, 498);
+            this.pRodape.Name = "pRodape";
+            this.pRodape.Size = new System.Drawing.Size(227, 45);
+            this.pRodape.TabIndex = 1;
+            // 
+            // pOpcoes
+            // 
+            this.pOpcoes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pOpcoes.Location = new System.Drawing.Point(0, 94);
+            this.pOpcoes.Name = "pOpcoes";
+            this.pOpcoes.Size = new System.Drawing.Size(227, 404);
+            this.pOpcoes.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            this.label1.Location = new System.Drawing.Point(0, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(227, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Desenvolvido por Gabriel Monteiro";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -78,8 +124,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMain";
             this.Load += new System.EventHandler(this.FrmMain_Load);
+            this.pMenuLateral.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
+            this.pRodape.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -88,6 +136,10 @@
         private System.Windows.Forms.Panel pMenuLateral;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pbClose;
+        private System.Windows.Forms.Panel pOpcoes;
+        private System.Windows.Forms.Panel pRodape;
+        private System.Windows.Forms.Panel pLogo;
+        private System.Windows.Forms.Label label1;
     }
 }
 

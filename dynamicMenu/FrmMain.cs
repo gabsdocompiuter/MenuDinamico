@@ -59,7 +59,7 @@ namespace dynamicMenu
         {
             InitializeComponent();
 
-            wBtn = pMenuLateral.Size.Width;
+            wBtn = pOpcoes.Size.Width;
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -70,7 +70,7 @@ namespace dynamicMenu
         private void CarregaMenu()
         {
             //Tamanho da tela
-            int yTela = this.Size.Height;
+            int yOpc = pOpcoes.Size.Height;
 
             //Quantidade de itens no menu
             int qtd = 4;
@@ -78,7 +78,9 @@ namespace dynamicMenu
             String nome = "teste";
 
             //Calculo para centralizar os botões verticalmente
-            int pos1 = ((yTela - qtd * hBtn) / 2) - (hBtn/2);
+            int pos1 = ((yOpc - qtd * hBtn) / 2) - (hBtn/2);
+
+            Boolean needScroll = qtd * hBtn <= pOpcoes.Size.Height ? false : true;
 
             for (int i = 0; i < qtd; i++)
             {
@@ -109,7 +111,7 @@ namespace dynamicMenu
                 Location = new Point(0, posY),
                 Visible = false
             };
-            pMenuLateral.Controls.Add(p);
+            pOpcoes.Controls.Add(p);
         }
 
         /// <summary>
@@ -137,7 +139,7 @@ namespace dynamicMenu
             b.FlatAppearance.BorderSize = 0;
 
             b.Click += new EventHandler(MenuClick);
-            pMenuLateral.Controls.Add(b);
+            pOpcoes.Controls.Add(b);
         }
 
         /// <summary>
@@ -148,7 +150,7 @@ namespace dynamicMenu
         private void MenuClick(object sender, EventArgs e)
         {
             //Deixa todos com a cor padrão
-            foreach (Control c in pMenuLateral.Controls)
+            foreach (Control c in pOpcoes.Controls)
             {
                 if (c is Panel)
                 {
@@ -157,7 +159,7 @@ namespace dynamicMenu
 
                 if (c is Button)
                 {
-                    c.BackColor = pMenuLateral.BackColor;
+                    c.BackColor = pOpcoes.BackColor;
                 }
             }
 
@@ -167,7 +169,7 @@ namespace dynamicMenu
             //Muda para as novas cores
             b.BackColor = crBtnSl;
 
-            Panel icn = pMenuLateral.Controls.Find(pName, false).FirstOrDefault() as Panel;
+            Panel icn = pOpcoes.Controls.Find(pName, false).FirstOrDefault() as Panel;
             icn.Visible = true;
         }
 
