@@ -15,8 +15,6 @@ namespace dynamicMenu
         public FrmLogin()
         {
             InitializeComponent();
-
-            FrmConfig config = new FrmConfig();
         }
 
         /// <summary>
