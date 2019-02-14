@@ -75,19 +75,19 @@ namespace dynamicMenu
             //Quantidade de itens no menu
             int qtd = 4;
 
-            String nome = "teste";
+            string nome = "teste";
 
             //Calculo para centralizar os botões verticalmente
             int pos1 = ((yOpc - qtd * hBtn) / 2) - (hBtn/2);
 
-            Boolean needScroll = qtd * hBtn <= pOpcoes.Size.Height ? false : true;
+            bool needScroll = qtd * hBtn <= pOpcoes.Size.Height ? false : true;
 
             for (int i = 0; i < qtd; i++)
             {
                 int pos = pos1 + (i * hBtn);
 
-                String icnNome = $"icn{nome}{i}";
-                String btnNome = $"{nome}{i}";
+                string icnNome = $"icn{nome}{i}";
+                string btnNome = $"{nome}{i}";
 
                 AddIcn(pos, icnNome);
                 AddButton(pos, btnNome, "Texto" + i);
@@ -99,7 +99,7 @@ namespace dynamicMenu
         /// </summary>
         /// <param name="posY"></param>
         /// <param name="name"></param>
-        private void AddIcn(int posY, String name)
+        private void AddIcn(int posY, string name)
         {
             Panel p = new Panel
             {
@@ -120,7 +120,7 @@ namespace dynamicMenu
         /// <param name="posY"></param>
         /// <param name="name"></param>
         /// <param name="desc"></param>
-        private void AddButton(int posY, String name, String desc)
+        private void AddButton(int posY, string name, string desc)
         {
             Button b = new Button
             {
@@ -164,7 +164,7 @@ namespace dynamicMenu
             }
 
             Button b = (Button)sender;
-            String pName = "icn" + b.Name;
+            string pName = "icn" + b.Name;
 
             //Muda para as novas cores
             b.BackColor = crBtnSl;

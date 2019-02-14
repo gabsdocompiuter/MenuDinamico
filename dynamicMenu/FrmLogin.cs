@@ -42,13 +42,13 @@ namespace dynamicMenu
         {
             if (tbUser.Text == "Usuário")
             {
-                tbUser.Text = String.Empty;
+                tbUser.Text = string.Empty;
             }
         }
 
         private void tbUser_Leave(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(tbUser.Text))
+            if (string.IsNullOrEmpty(tbUser.Text))
             {
                 tbUser.Text = "Usuário";
             }
@@ -58,13 +58,13 @@ namespace dynamicMenu
         {
             if (tbPass.Text == "password")
             {
-                tbPass.Text = String.Empty;
+                tbPass.Text = string.Empty;
             }
         }
 
         private void tbPass_Leave(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(tbPass.Text))
+            if (string.IsNullOrEmpty(tbPass.Text))
             {
                 tbPass.Text = "password";
             }
