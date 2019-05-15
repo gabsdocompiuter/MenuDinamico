@@ -59,6 +59,12 @@ namespace dynamicMenu
         {
             InitializeComponent();
 
+            //pOpcoes.AutoScroll = false;
+            //pOpcoes.HorizontalScroll.Enabled = false;
+            //pOpcoes.HorizontalScroll.Visible = false;
+            //pOpcoes.HorizontalScroll.Maximum = 0;
+            pOpcoes.AutoScroll = true;
+
             wBtn = pOpcoes.Size.Width;
         }
 
@@ -73,7 +79,7 @@ namespace dynamicMenu
             int yOpc = pOpcoes.Size.Height;
 
             //Quantidade de itens no menu
-            int qtd = 4;
+            int qtd = 8;
 
             string nome = "teste";
 

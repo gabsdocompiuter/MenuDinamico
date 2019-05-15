@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dynamicMenu", "dynamicMenu\dynamicMenu.csproj", "{AAB5AE03-7D21-492B-9A30-FFB74F518B76}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{EB233EA0-3E8F-4C99-8C44-63285B931305}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{AAB5AE03-7D21-492B-9A30-FFB74F518B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAB5AE03-7D21-492B-9A30-FFB74F518B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAB5AE03-7D21-492B-9A30-FFB74F518B76}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EB233EA0-3E8F-4C99-8C44-63285B931305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB233EA0-3E8F-4C99-8C44-63285B931305}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB233EA0-3E8F-4C99-8C44-63285B931305}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB233EA0-3E8F-4C99-8C44-63285B931305}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
