@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace dynamicMenu
+namespace MenuDinamico
 {
     public partial class FrmMain : Form
     {

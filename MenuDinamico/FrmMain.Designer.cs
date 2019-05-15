@@ -1,4 +1,4 @@
-﻿namespace dynamicMenu
+﻿namespace MenuDinamico
 {
     partial class FrmMain
     {
@@ -66,7 +66,7 @@
             // pbClose
             // 
             this.pbClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.pbClose.Image = global::dynamicMenu.Properties.Resources.power_24x24;
+            this.pbClose.Image = global::MenuDinamico.Properties.Resources.power_24x24;
             this.pbClose.Location = new System.Drawing.Point(659, 3);
             this.pbClose.Name = "pbClose";
             this.pbClose.Size = new System.Drawing.Size(25, 25);
