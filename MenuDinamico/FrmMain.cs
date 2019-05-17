@@ -86,7 +86,8 @@ namespace MenuDinamico
             //Calculo para centralizar os botões verticalmente
             int pos1 = ((yOpc - qtd * hBtn) / 2) - (hBtn/2);
 
-            bool needScroll = qtd * hBtn <= pOpcoes.Size.Height ? false : true;
+            //Caso tenha muitos botões, adiciona no início do panel
+            if (pos1 < 0) pos1 = 0;
 
             for (int i = 0; i < qtd; i++)
             {
