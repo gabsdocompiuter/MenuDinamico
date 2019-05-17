@@ -59,10 +59,10 @@ namespace MenuDinamico
         {
             InitializeComponent();
 
-            //pOpcoes.AutoScroll = false;
-            //pOpcoes.HorizontalScroll.Enabled = false;
-            //pOpcoes.HorizontalScroll.Visible = false;
-            //pOpcoes.HorizontalScroll.Maximum = 0;
+            pOpcoes.AutoScroll = false;
+            pOpcoes.HorizontalScroll.Enabled = false;
+            pOpcoes.HorizontalScroll.Visible = false;
+            pOpcoes.HorizontalScroll.Maximum = 0;
             pOpcoes.AutoScroll = true;
 
             wBtn = pOpcoes.Size.Width;
@@ -79,7 +79,7 @@ namespace MenuDinamico
             int yOpc = pOpcoes.Size.Height;
 
             //Quantidade de itens no menu
-            int qtd = 8;
+            int qtd = 15;
 
             string nome = "teste";
 
